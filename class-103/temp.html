@@ -12,13 +12,25 @@
     </div>
 
     <div class="site-temp">
-        <h1>Convert Celcius to Fahrenheit</h1>
+        <h1>Convert Celsius to Fahrenheit</h1>
+        <button class="button" onclick="celToFahr()">Celsius to Fahrenheit</button>
+    <p id="temp"></p> 
     </div>
     <div class="site-temp">
-        <button class="button" onclick="celToFahr()">Celsius to Fahrenheit</button>
-    </div>
-    <div id="temp">
+    <h1>Temperature Converter</h1>
 
+  <label for="temperature">Enter temperature:</label>
+  <input type="number" id="temperature" placeholder="Enter temperature">
+  
+  <label for="scale">Select scale:</label>
+  <select id="scale">
+    <option value="C">Celsius</option>
+    <option value="F">Fahrenheit</option>
+  </select>
+
+  <button class="button" onclick="convertTemperature()">Convert</button>
+
+  <p id="result"></p>
     </div>
    <script src="./scripts/temp.js"></script>
 </body>

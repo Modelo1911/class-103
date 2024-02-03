@@ -2,7 +2,7 @@
     let userDB = "Guillermo";
     let passDB = "Test7891";
 
-
+  
 function login (){
     let userName = prompt("Enter your user name: ");
     let userPassword = prompt("Type your password: ");
