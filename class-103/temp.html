@@ -16,19 +16,39 @@
         <button class="button" onclick="celToFahr()">Celsius to Fahrenheit</button>
     <p id="temp"></p> 
     </div>
+
     <div class="site-temp">
     <h1>Temperature Converter</h1>
 
-  <label for="temperature">Enter temperature:</label>
-  <input type="number" id="temperature" placeholder="Enter temperature">
+      <label for="temperature">Enter temperature:</label>
+        <input type="number" id="temperature" placeholder="Enter temperature">      
+      <label for="scale">Select scale:</label>
+        <select id="scale">
+        <option value="C">Celsius</option>
+        <option value="F">Fahrenheit</option>
+      </select>
+
+      <button class="button" onclick="convertTemperature()">Convert Temperature</button>
+
+      <p id="result"></p>
+    </div>
+
+    <div class="site-temp">
+    <h1>Temperature Range Converter</h1>
+
+  <label for="startTemperature">Enter starting temperature:</label>
+  <input type="number" id="startTemperature" placeholder="Enter starting temperature">
   
-  <label for="scale">Select scale:</label>
-  <select id="scale">
+  <label for="endTemperature">Enter ending temperature:</label>
+  <input type="number" id="endTemperature" placeholder="Enter ending temperature">
+
+  <label for="temperatureScale">Select temperature scale:</label>
+  <select id="temperatureScale">
     <option value="C">Celsius</option>
     <option value="F">Fahrenheit</option>
   </select>
 
-  <button class="button" onclick="convertTemperature()">Convert</button>
+  <button class="button" onclick="convertTemperatureRange()">Convert</button>
 
   <p id="result"></p>
     </div>
