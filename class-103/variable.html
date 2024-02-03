@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+</head>
+<body>
+
+  <h1>variables</h1>
+
+  <script>
+    let productName = "Shoestand";
+    let brand = "Amazon";
+    let price = 49.99;
+    let rating = 4.3;
+    let reviews = 200;
+    let inStock = true;
+
+    let shippingMethod = "Standard";
+    let estimatedDelivery = "2-5 business days";
+    let freeShipping = true;
+
+    let sellerName = "MADSOUKY";
+    let sellerRating = 4.5;
+    let sellerFeedback = "Fast shipping and excellent customer service.";
+
+    document.write(`
+      <p>Product Name: ${productName}</p>
+      <p>Brand: ${brand}</p>
+      <p>Price: $${price.toFixed(2)}</p>
+      <p>>Rating: ${rating} stars</p>
+      <p>>Reviews: ${reviews} reviews</p>
+      <p>>In Stock: ${inStock ? 'Yes' : 'No'}</p>
+
+      <p>Shipping Method:</strong> ${shippingMethod}</p>
+      <p>Estimated Delivery:</strong> ${estimatedDelivery}</p>
+      <p>Free Shipping:</strong> ${freeShipping ? 'Yes' : 'No'}</p>
+
+      <p>Seller: ${sellerName}</p>
+      <p>Seller Rating: ${sellerRating} stars</p>
+      <p>Seller Feedback: ${sellerFeedback}</p>
+    `);
+  </script>
+
+</body>
+</html>
